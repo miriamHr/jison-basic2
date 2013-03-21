@@ -19,7 +19,7 @@ var make_treasure = fuction(){
  
 \s+               {/* skip whitespace */}
 /*\d+               { return 'num'; }
-\d+(\.\d+)?([+-]?[eE]\d+)? {yytex = Number (yytext;return 'NUM';}
+\d+(\.\d+)?([+-]?[eE]\d+)? { yytex = Number ( yytext ); return 'NUM'; }
 [a-zA-Z_]\w*      { return 'ID'; } //token
 [= ;]			  {return yytext;}
 .				   {return 'INVALID'}
